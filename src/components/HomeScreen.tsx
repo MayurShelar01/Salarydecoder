@@ -66,7 +66,7 @@ export function HomeScreen() {
           color: 'var(--color-text-primary)',
           marginBottom: 8,
         }}>
-          Salary Calculator
+          Salary Decoded
         </h1>
 
         {/* ── Description ── */}
