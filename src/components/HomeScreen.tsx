@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useCalculatorStore } from '@/store/useCalculatorStore'
 import { useSalaryCalculation } from '@/hooks/useSalaryCalculation'
-import { formatINR } from '@/lib/utils/formatters'
+import { formatINR, numberToIndianWords, formatINRWithLacs } from '@/lib/utils/formatters'
 import { BreakdownLineItem } from './salary/BreakdownLineItem'
 import { RecoveryLabel } from './salary/RecoveryLabel'
 import { PFCalculator } from './salary/pf/PFCalculator'
@@ -22,6 +22,8 @@ export function HomeScreen() {
   } = useCalculatorStore()
 
   const [showBreakdown, setShowBreakdown] = useState(false)
+  const [isCtcFocused, setIsCtcFocused] = useState(false)
+  const [isVariableFocused, setIsVariableFocused] = useState(false)
 
   const breakdown = useSalaryCalculation()
 
@@ -141,9 +143,17 @@ export function HomeScreen() {
             }}>₹</span>
             <input
               type="text"
-              value={ctc === 0 ? '' : formatINR(ctc).replace('₹', '').trim()}
+              value={
+                ctc === 0 
+                  ? '' 
+                  : (isCtcFocused 
+                      ? ctc.toString() 
+                      : formatINRWithLacs(ctc))
+              }
+              onFocus={() => setIsCtcFocused(true)}
+              onBlur={() => setIsCtcFocused(false)}
               onChange={(e) => {
-                const value = e.target.value.replace(/[,]/g, '')
+                const value = e.target.value.replace(/[^0-9.]/g, '')
                 const num = parseFloat(value)
                 setCtc(isNaN(num) ? 0 : num)
               }}
@@ -161,6 +171,16 @@ export function HomeScreen() {
               }}
             />
           </div>
+          {ctc > 0 && (
+            <p style={{
+              fontSize: 13,
+              color: 'var(--color-text-secondary)',
+              marginTop: 8,
+              fontWeight: 400
+            }}>
+              {numberToIndianWords(ctc)}
+            </p>
+          )}
         </div>
 
         {/* ── Variable Component ── */}
@@ -189,9 +209,17 @@ export function HomeScreen() {
             }}>₹</span>
             <input
               type="text"
-              value={variableComponent === 0 ? '' : formatINR(variableComponent).replace('₹', '').trim()}
+              value={
+                variableComponent === 0 
+                  ? '' 
+                  : (isVariableFocused 
+                      ? variableComponent.toString() 
+                      : formatINRWithLacs(variableComponent))
+              }
+              onFocus={() => setIsVariableFocused(true)}
+              onBlur={() => setIsVariableFocused(false)}
               onChange={(e) => {
-                const value = e.target.value.replace(/[,]/g, '')
+                const value = e.target.value.replace(/[^0-9.]/g, '')
                 const num = parseFloat(value)
                 setVariableComponent(isNaN(num) ? 0 : num)
               }}
@@ -209,6 +237,16 @@ export function HomeScreen() {
               }}
             />
           </div>
+          {variableComponent > 0 && (
+            <p style={{
+              fontSize: 13,
+              color: 'var(--color-text-secondary)',
+              marginTop: 8,
+              fontWeight: 400
+            }}>
+              {numberToIndianWords(variableComponent)}
+            </p>
+          )}
         </div>
 
         {/* ── Basic Salary Slider ── */}
@@ -500,12 +538,12 @@ export function HomeScreen() {
                 </p>
               </div>
             )}
-            {/* PF Calculator inside the card */}
-            <div style={{ marginTop: 24 }}>
-              <PFCalculator />
-            </div>
-
           </div>
+        )}
+
+        {/* PF Calculator */}
+        {showBreakdown && (
+          <PFCalculator />
         )}
 
       </div>

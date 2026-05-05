@@ -6,7 +6,6 @@ import {
   AccordionTrigger,
   AccordionContent,
 } from '@/components/ui/accordion'
-import { Slider } from '@/components/ui/slider'
 
 import { PFCorpusOutput } from './PFCorpusOutput'
 import { EPFvsEPSExplainer } from './EPFvsEPSExplainer'
@@ -17,15 +16,30 @@ export function PFCalculator() {
   const calculation = usePFCalculation()
 
   return (
-    <div style={{ backgroundColor: '#EBEBEB', borderRadius: 4, overflow: 'hidden' }}>
+    <div style={{ marginTop: 24 }}>
       <Accordion type="single" collapsible>
-        <AccordionItem value="pf-calculator" className="border-none">
-          <AccordionTrigger className="px-4 py-4 hover:no-underline hover:bg-[#E2E2E2] transition-colors">
-            <span style={{ fontSize: 16, fontWeight: 600, color: 'var(--color-text-primary)' }}>
+        <AccordionItem 
+          value="pf-calculator" 
+          style={{ 
+            backgroundColor: 'transparent', 
+            borderRadius: 8, 
+            border: '1px solid var(--color-border)', 
+            overflow: 'hidden' 
+          }}
+        >
+          <AccordionTrigger className="px-5 py-4 bg-transparent border-none outline-none hover:no-underline hover:bg-transparent shadow-none">
+            <span style={{ fontSize: 15, fontWeight: 500, color: 'var(--color-text-secondary)' }}>
               PF Calculator
             </span>
           </AccordionTrigger>
-          <AccordionContent className="px-4 pb-4 pt-2">
+          <AccordionContent className="border-none p-0">
+            <div style={{
+              backgroundColor: '#FFFFFF',
+              borderRadius: 16,
+              boxShadow: '0 2px 12px rgba(0,0,0,0.07)',
+              padding: '24px 20px 28px',
+              margin: '0 16px 16px 16px',
+            }}>
             
             {/* Slider Section */}
             <div style={{ marginBottom: 24 }}>
@@ -37,12 +51,22 @@ export function PFCalculator() {
                   {pfYears} {pfYears === 1 ? 'year' : 'years'}
                 </span>
               </div>
-              <Slider
-                value={[pfYears]}
-                min={1}
-                max={30}
-                step={1}
-                onValueChange={(val) => setPfYears(val[0])}
+              <input
+                type="range"
+                min="1"
+                max="30"
+                step="1"
+                value={pfYears}
+                onChange={(e) => setPfYears(parseInt(e.target.value))}
+                className="slider-input"
+                style={{
+                  width: '100%',
+                  height: 4,
+                  borderRadius: 2,
+                  background: `linear-gradient(to right, var(--color-accent) 0%, var(--color-accent) ${((pfYears - 1) / 29) * 100}%, var(--color-border) ${((pfYears - 1) / 29) * 100}%, var(--color-border) 100%)`,
+                  outline: 'none',
+                  cursor: 'pointer',
+                }}
               />
             </div>
 
@@ -64,6 +88,7 @@ export function PFCalculator() {
               </p>
             )}
 
+            </div>
           </AccordionContent>
         </AccordionItem>
       </Accordion>
