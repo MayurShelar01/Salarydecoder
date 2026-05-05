@@ -1,5 +1,4 @@
 import { useCalculatorStore } from '@/store/useCalculatorStore'
-import type { ViewMode } from '@/lib/types/salary'
 
 export function MonthlyYearlyToggle() {
   const { viewMode, setViewMode } = useCalculatorStore()

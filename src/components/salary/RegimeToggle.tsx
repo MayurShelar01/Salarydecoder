@@ -1,5 +1,4 @@
 import { useCalculatorStore } from '@/store/useCalculatorStore'
-import type { TaxRegime } from '@/lib/types/salary'
 
 export function RegimeToggle() {
   const { regime, setRegime } = useCalculatorStore()

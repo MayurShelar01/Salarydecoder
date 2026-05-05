@@ -1,0 +1,23 @@
+{
+  "nodes": [
+    {"id": "main", "label": "Main Entry", "file_type": "code", "source_file": "src/main.tsx"},
+    {"id": "app", "label": "App Component", "file_type": "code", "source_file": "src/App.tsx"},
+    {"id": "home_screen", "label": "HomeScreen", "file_type": "code", "source_file": "src/components/HomeScreen.tsx"},
+    {"id": "config_vite", "label": "Vite Config", "file_type": "code", "source_file": "vite.config.ts"},
+    {"id": "config_tailwind", "label": "Tailwind Config", "file_type": "code", "source_file": "tailwind.config.js"},
+    {"id": "component_breakdown_item", "label": "BreakdownLineItem", "file_type": "code", "source_file": "src/components/salary/BreakdownLineItem.tsx"},
+    {"id": "component_monthly_yearly", "label": "MonthlyYearlyToggle", "file_type": "code", "source_file": "src/components/salary/MonthlyYearlyToggle.tsx"},
+    {"id": "component_regime_toggle", "label": "RegimeToggle", "file_type": "code", "source_file": "src/components/salary/RegimeToggle.tsx"},
+    {"id": "component_salary_form", "label": "SalaryInputForm", "file_type": "code", "source_file": "src/components/salary/SalaryInputForm.tsx"}
+  ],
+  "edges": [
+    {"source": "main", "target": "app", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "src/main.tsx"},
+    {"source": "app", "target": "home_screen", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "src/App.tsx"},
+    {"source": "home_screen", "target": "component_breakdown_item", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "src/components/HomeScreen.tsx"},
+    {"source": "home_screen", "target": "component_monthly_yearly", "relation": "calls", "confidence": "INFERRED", "confidence_score": 0.95, "source_file": "src/components/HomeScreen.tsx"},
+    {"source": "home_screen", "target": "component_regime_toggle", "relation": "calls", "confidence": "INFERRED", "confidence_score": 0.85, "source_file": "src/components/HomeScreen.tsx"}
+  ],
+  "hyperedges": [],
+  "input_tokens": 1200,
+  "output_tokens": 800
+}

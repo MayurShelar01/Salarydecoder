@@ -1,0 +1,1458 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "core_logic",
+        "label": "Core Calculation Pipeline",
+        "nodes": [
+          "logic_tax",
+          "logic_pf",
+          "logic_hra",
+          "logic_salary"
+        ],
+        "relation": "implement",
+        "confidence": "INFERRED",
+        "confidence_score": 0.85,
+        "source_file": "src/lib/calculations/index.ts"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "label": "eslint.config.js",
+      "file_type": "code",
+      "source_file": "eslint.config.js",
+      "source_location": "L1",
+      "id": "eslint_config_js",
+      "community": 14,
+      "norm_label": "eslint.config.js"
+    },
+    {
+      "label": "postcss.config.js",
+      "file_type": "code",
+      "source_file": "postcss.config.js",
+      "source_location": "L1",
+      "id": "postcss_config_js",
+      "community": 15,
+      "norm_label": "postcss.config.js"
+    },
+    {
+      "label": "tailwind.config.js",
+      "file_type": "code",
+      "source_file": "tailwind.config.js",
+      "source_location": "L1",
+      "id": "tailwind_config_js",
+      "community": 16,
+      "norm_label": "tailwind.config.js"
+    },
+    {
+      "label": "vite.config.ts",
+      "file_type": "code",
+      "source_file": "vite.config.ts",
+      "source_location": "L1",
+      "id": "vite_config_ts",
+      "community": 17,
+      "norm_label": "vite.config.ts"
+    },
+    {
+      "label": "vitest.config.ts",
+      "file_type": "code",
+      "source_file": "vitest.config.ts",
+      "source_location": "L1",
+      "id": "vitest_config_ts",
+      "community": 18,
+      "norm_label": "vitest.config.ts"
+    },
+    {
+      "label": "App.tsx",
+      "file_type": "code",
+      "source_file": "src/App.tsx",
+      "source_location": "L1",
+      "id": "src_app_tsx",
+      "community": 7,
+      "norm_label": "app.tsx"
+    },
+    {
+      "label": "App()",
+      "file_type": "code",
+      "source_file": "src/App.tsx",
+      "source_location": "L3",
+      "id": "src_app_app",
+      "community": 7,
+      "norm_label": "app()"
+    },
+    {
+      "label": "main.tsx",
+      "file_type": "code",
+      "source_file": "src/main.tsx",
+      "source_location": "L1",
+      "id": "src_main_tsx",
+      "community": 7,
+      "norm_label": "main.tsx"
+    },
+    {
+      "label": "HomeScreen.tsx",
+      "file_type": "code",
+      "source_file": "src/components/HomeScreen.tsx",
+      "source_location": "L1",
+      "id": "src_components_homescreen_tsx",
+      "community": 4,
+      "norm_label": "homescreen.tsx"
+    },
+    {
+      "label": "getAmount()",
+      "file_type": "code",
+      "source_file": "src/components/HomeScreen.tsx",
+      "source_location": "L45",
+      "id": "components_homescreen_getamount",
+      "community": 4,
+      "norm_label": "getamount()"
+    },
+    {
+      "label": "handleCalculate()",
+      "file_type": "code",
+      "source_file": "src/components/HomeScreen.tsx",
+      "source_location": "L48",
+      "id": "components_homescreen_handlecalculate",
+      "community": 4,
+      "norm_label": "handlecalculate()"
+    },
+    {
+      "label": "trim()",
+      "file_type": "code",
+      "source_file": "src/components/HomeScreen.tsx",
+      "source_location": "L314",
+      "id": "components_homescreen_trim",
+      "community": 4,
+      "norm_label": "trim()"
+    },
+    {
+      "label": "Navigation.tsx",
+      "file_type": "code",
+      "source_file": "src/components/Navigation.tsx",
+      "source_location": "L1",
+      "id": "src_components_navigation_tsx",
+      "community": 8,
+      "norm_label": "navigation.tsx"
+    },
+    {
+      "label": "Navigation()",
+      "file_type": "code",
+      "source_file": "src/components/Navigation.tsx",
+      "source_location": "L6",
+      "id": "components_navigation_navigation",
+      "community": 8,
+      "norm_label": "navigation()"
+    },
+    {
+      "label": "SalaryBreakdownScreen.tsx",
+      "file_type": "code",
+      "source_file": "src/components/SalaryBreakdownScreen.tsx",
+      "source_location": "L1",
+      "id": "src_components_salarybreakdownscreen_tsx",
+      "community": 6,
+      "norm_label": "salarybreakdownscreen.tsx"
+    },
+    {
+      "label": "SalaryBreakdownScreen()",
+      "file_type": "code",
+      "source_file": "src/components/SalaryBreakdownScreen.tsx",
+      "source_location": "L7",
+      "id": "components_salarybreakdownscreen_salarybreakdownscreen",
+      "community": 6,
+      "norm_label": "salarybreakdownscreen()"
+    },
+    {
+      "label": "Footer.tsx",
+      "file_type": "code",
+      "source_file": "src/components/layout/Footer.tsx",
+      "source_location": "L1",
+      "id": "src_components_layout_footer_tsx",
+      "community": 9,
+      "norm_label": "footer.tsx"
+    },
+    {
+      "label": "Footer()",
+      "file_type": "code",
+      "source_file": "src/components/layout/Footer.tsx",
+      "source_location": "L1",
+      "id": "layout_footer_footer",
+      "community": 9,
+      "norm_label": "footer()"
+    },
+    {
+      "label": "Header.tsx",
+      "file_type": "code",
+      "source_file": "src/components/layout/Header.tsx",
+      "source_location": "L1",
+      "id": "src_components_layout_header_tsx",
+      "community": 10,
+      "norm_label": "header.tsx"
+    },
+    {
+      "label": "Header()",
+      "file_type": "code",
+      "source_file": "src/components/layout/Header.tsx",
+      "source_location": "L1",
+      "id": "layout_header_header",
+      "community": 10,
+      "norm_label": "header()"
+    },
+    {
+      "label": "PageContainer.tsx",
+      "file_type": "code",
+      "source_file": "src/components/layout/PageContainer.tsx",
+      "source_location": "L1",
+      "id": "src_components_layout_pagecontainer_tsx",
+      "community": 11,
+      "norm_label": "pagecontainer.tsx"
+    },
+    {
+      "label": "PageContainer()",
+      "file_type": "code",
+      "source_file": "src/components/layout/PageContainer.tsx",
+      "source_location": "L3",
+      "id": "layout_pagecontainer_pagecontainer",
+      "community": 11,
+      "norm_label": "pagecontainer()"
+    },
+    {
+      "label": "BreakdownLineItem.tsx",
+      "file_type": "code",
+      "source_file": "src/components/salary/BreakdownLineItem.tsx",
+      "source_location": "L1",
+      "id": "src_components_salary_breakdownlineitem_tsx",
+      "community": 4,
+      "norm_label": "breakdownlineitem.tsx"
+    },
+    {
+      "label": "BreakdownLineItem()",
+      "file_type": "code",
+      "source_file": "src/components/salary/BreakdownLineItem.tsx",
+      "source_location": "L11",
+      "id": "salary_breakdownlineitem_breakdownlineitem",
+      "community": 4,
+      "norm_label": "breakdownlineitem()"
+    },
+    {
+      "label": "MonthlyYearlyToggle.tsx",
+      "file_type": "code",
+      "source_file": "src/components/salary/MonthlyYearlyToggle.tsx",
+      "source_location": "L1",
+      "id": "src_components_salary_monthlyyearlytoggle_tsx",
+      "community": 5,
+      "norm_label": "monthlyyearlytoggle.tsx"
+    },
+    {
+      "label": "MonthlyYearlyToggle()",
+      "file_type": "code",
+      "source_file": "src/components/salary/MonthlyYearlyToggle.tsx",
+      "source_location": "L4",
+      "id": "salary_monthlyyearlytoggle_monthlyyearlytoggle",
+      "community": 5,
+      "norm_label": "monthlyyearlytoggle()"
+    },
+    {
+      "label": "RegimeComparisonCard.tsx",
+      "file_type": "code",
+      "source_file": "src/components/salary/RegimeComparisonCard.tsx",
+      "source_location": "L1",
+      "id": "src_components_salary_regimecomparisoncard_tsx",
+      "community": 2,
+      "norm_label": "regimecomparisoncard.tsx"
+    },
+    {
+      "label": "getRecommendationText()",
+      "file_type": "code",
+      "source_file": "src/components/salary/RegimeComparisonCard.tsx",
+      "source_location": "L42",
+      "id": "salary_regimecomparisoncard_getrecommendationtext",
+      "community": 2,
+      "norm_label": "getrecommendationtext()"
+    },
+    {
+      "label": "getRecommendationColor()",
+      "file_type": "code",
+      "source_file": "src/components/salary/RegimeComparisonCard.tsx",
+      "source_location": "L58",
+      "id": "salary_regimecomparisoncard_getrecommendationcolor",
+      "community": 2,
+      "norm_label": "getrecommendationcolor()"
+    },
+    {
+      "label": "RegimeToggle.tsx",
+      "file_type": "code",
+      "source_file": "src/components/salary/RegimeToggle.tsx",
+      "source_location": "L1",
+      "id": "src_components_salary_regimetoggle_tsx",
+      "community": 12,
+      "norm_label": "regimetoggle.tsx"
+    },
+    {
+      "label": "RegimeToggle()",
+      "file_type": "code",
+      "source_file": "src/components/salary/RegimeToggle.tsx",
+      "source_location": "L4",
+      "id": "salary_regimetoggle_regimetoggle",
+      "community": 12,
+      "norm_label": "regimetoggle()"
+    },
+    {
+      "label": "SalaryBreakdownCard.tsx",
+      "file_type": "code",
+      "source_file": "src/components/salary/SalaryBreakdownCard.tsx",
+      "source_location": "L1",
+      "id": "src_components_salary_salarybreakdowncard_tsx",
+      "community": 5,
+      "norm_label": "salarybreakdowncard.tsx"
+    },
+    {
+      "label": "getAmount()",
+      "file_type": "code",
+      "source_file": "src/components/salary/SalaryBreakdownCard.tsx",
+      "source_location": "L33",
+      "id": "salary_salarybreakdowncard_getamount",
+      "community": 5,
+      "norm_label": "getamount()"
+    },
+    {
+      "label": "formatWithUnit()",
+      "file_type": "code",
+      "source_file": "src/components/salary/SalaryBreakdownCard.tsx",
+      "source_location": "L37",
+      "id": "salary_salarybreakdowncard_formatwithunit",
+      "community": 5,
+      "norm_label": "formatwithunit()"
+    },
+    {
+      "label": "SalaryInputForm.tsx",
+      "file_type": "code",
+      "source_file": "src/components/salary/SalaryInputForm.tsx",
+      "source_location": "L1",
+      "id": "src_components_salary_salaryinputform_tsx",
+      "community": 19,
+      "norm_label": "salaryinputform.tsx"
+    },
+    {
+      "label": "accordion.tsx",
+      "file_type": "code",
+      "source_file": "src/components/ui/accordion.tsx",
+      "source_location": "L1",
+      "id": "src_components_ui_accordion_tsx",
+      "community": 20,
+      "norm_label": "accordion.tsx"
+    },
+    {
+      "label": "button.tsx",
+      "file_type": "code",
+      "source_file": "src/components/ui/button.tsx",
+      "source_location": "L1",
+      "id": "src_components_ui_button_tsx",
+      "community": 21,
+      "norm_label": "button.tsx"
+    },
+    {
+      "label": "card.tsx",
+      "file_type": "code",
+      "source_file": "src/components/ui/card.tsx",
+      "source_location": "L1",
+      "id": "src_components_ui_card_tsx",
+      "community": 22,
+      "norm_label": "card.tsx"
+    },
+    {
+      "label": "input.tsx",
+      "file_type": "code",
+      "source_file": "src/components/ui/input.tsx",
+      "source_location": "L1",
+      "id": "src_components_ui_input_tsx",
+      "community": 23,
+      "norm_label": "input.tsx"
+    },
+    {
+      "label": "popover.tsx",
+      "file_type": "code",
+      "source_file": "src/components/ui/popover.tsx",
+      "source_location": "L1",
+      "id": "src_components_ui_popover_tsx",
+      "community": 24,
+      "norm_label": "popover.tsx"
+    },
+    {
+      "label": "slider.tsx",
+      "file_type": "code",
+      "source_file": "src/components/ui/slider.tsx",
+      "source_location": "L1",
+      "id": "src_components_ui_slider_tsx",
+      "community": 25,
+      "norm_label": "slider.tsx"
+    },
+    {
+      "label": "tabs.tsx",
+      "file_type": "code",
+      "source_file": "src/components/ui/tabs.tsx",
+      "source_location": "L1",
+      "id": "src_components_ui_tabs_tsx",
+      "community": 26,
+      "norm_label": "tabs.tsx"
+    },
+    {
+      "label": "toggle-group.tsx",
+      "file_type": "code",
+      "source_file": "src/components/ui/toggle-group.tsx",
+      "source_location": "L1",
+      "id": "src_components_ui_toggle_group_tsx",
+      "community": 27,
+      "norm_label": "toggle-group.tsx"
+    },
+    {
+      "label": "tooltip.tsx",
+      "file_type": "code",
+      "source_file": "src/components/ui/tooltip.tsx",
+      "source_location": "L1",
+      "id": "src_components_ui_tooltip_tsx",
+      "community": 28,
+      "norm_label": "tooltip.tsx"
+    },
+    {
+      "label": "useFnFCalculation.ts",
+      "file_type": "code",
+      "source_file": "src/hooks/useFnFCalculation.ts",
+      "source_location": "L1",
+      "id": "src_hooks_usefnfcalculation_ts",
+      "community": 29,
+      "norm_label": "usefnfcalculation.ts"
+    },
+    {
+      "label": "usePFCalculation.ts",
+      "file_type": "code",
+      "source_file": "src/hooks/usePFCalculation.ts",
+      "source_location": "L1",
+      "id": "src_hooks_usepfcalculation_ts",
+      "community": 30,
+      "norm_label": "usepfcalculation.ts"
+    },
+    {
+      "label": "useSalaryCalculation.ts",
+      "file_type": "code",
+      "source_file": "src/hooks/useSalaryCalculation.ts",
+      "source_location": "L1",
+      "id": "src_hooks_usesalarycalculation_ts",
+      "community": 6,
+      "norm_label": "usesalarycalculation.ts"
+    },
+    {
+      "label": "useSalaryCalculation()",
+      "file_type": "code",
+      "source_file": "src/hooks/useSalaryCalculation.ts",
+      "source_location": "L6",
+      "id": "hooks_usesalarycalculation_usesalarycalculation",
+      "community": 6,
+      "norm_label": "usesalarycalculation()"
+    },
+    {
+      "label": "fnf.ts",
+      "file_type": "code",
+      "source_file": "src/lib/calculations/fnf.ts",
+      "source_location": "L1",
+      "id": "src_lib_calculations_fnf_ts",
+      "community": 31,
+      "norm_label": "fnf.ts"
+    },
+    {
+      "label": "hra.ts",
+      "file_type": "code",
+      "source_file": "src/lib/calculations/hra.ts",
+      "source_location": "L1",
+      "id": "src_lib_calculations_hra_ts",
+      "community": 1,
+      "norm_label": "hra.ts"
+    },
+    {
+      "label": "calculateHRAExemption()",
+      "file_type": "code",
+      "source_file": "src/lib/calculations/hra.ts",
+      "source_location": "L4",
+      "id": "calculations_hra_calculatehraexemption",
+      "community": 1,
+      "norm_label": "calculatehraexemption()"
+    },
+    {
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "src/lib/calculations/index.ts",
+      "source_location": "L1",
+      "id": "src_lib_calculations_index_ts",
+      "community": 32,
+      "norm_label": "index.ts"
+    },
+    {
+      "label": "pf.ts",
+      "file_type": "code",
+      "source_file": "src/lib/calculations/pf.ts",
+      "source_location": "L1",
+      "id": "src_lib_calculations_pf_ts",
+      "community": 33,
+      "norm_label": "pf.ts"
+    },
+    {
+      "label": "salary.ts",
+      "file_type": "code",
+      "source_file": "src/lib/calculations/salary.ts",
+      "source_location": "L1",
+      "id": "src_lib_calculations_salary_ts",
+      "community": 1,
+      "norm_label": "salary.ts"
+    },
+    {
+      "label": "calculateSalaryBreakdown()",
+      "file_type": "code",
+      "source_file": "src/lib/calculations/salary.ts",
+      "source_location": "L14",
+      "id": "calculations_salary_calculatesalarybreakdown",
+      "community": 1,
+      "norm_label": "calculatesalarybreakdown()"
+    },
+    {
+      "label": "tax.ts",
+      "file_type": "code",
+      "source_file": "src/lib/calculations/tax.ts",
+      "source_location": "L1",
+      "id": "src_lib_calculations_tax_ts",
+      "community": 1,
+      "norm_label": "tax.ts"
+    },
+    {
+      "label": "calculateTaxResult()",
+      "file_type": "code",
+      "source_file": "src/lib/calculations/tax.ts",
+      "source_location": "L5",
+      "id": "calculations_tax_calculatetaxresult",
+      "community": 1,
+      "norm_label": "calculatetaxresult()"
+    },
+    {
+      "label": "calculateTax()",
+      "file_type": "code",
+      "source_file": "src/lib/calculations/tax.ts",
+      "source_location": "L59",
+      "id": "calculations_tax_calculatetax",
+      "community": 1,
+      "norm_label": "calculatetax()"
+    },
+    {
+      "label": "constants.ts",
+      "file_type": "code",
+      "source_file": "src/lib/config/constants.ts",
+      "source_location": "L1",
+      "id": "src_lib_config_constants_ts",
+      "community": 34,
+      "norm_label": "constants.ts"
+    },
+    {
+      "label": "recovery-labels.ts",
+      "file_type": "code",
+      "source_file": "src/lib/config/recovery-labels.ts",
+      "source_location": "L1",
+      "id": "src_lib_config_recovery_labels_ts",
+      "community": 35,
+      "norm_label": "recovery-labels.ts"
+    },
+    {
+      "label": "tax-slabs.ts",
+      "file_type": "code",
+      "source_file": "src/lib/config/tax-slabs.ts",
+      "source_location": "L1",
+      "id": "src_lib_config_tax_slabs_ts",
+      "community": 36,
+      "norm_label": "tax-slabs.ts"
+    },
+    {
+      "label": "fnf.ts",
+      "file_type": "code",
+      "source_file": "src/lib/types/fnf.ts",
+      "source_location": "L1",
+      "id": "src_lib_types_fnf_ts",
+      "community": 37,
+      "norm_label": "fnf.ts"
+    },
+    {
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "src/lib/types/index.ts",
+      "source_location": "L1",
+      "id": "src_lib_types_index_ts",
+      "community": 38,
+      "norm_label": "index.ts"
+    },
+    {
+      "label": "pf.ts",
+      "file_type": "code",
+      "source_file": "src/lib/types/pf.ts",
+      "source_location": "L1",
+      "id": "src_lib_types_pf_ts",
+      "community": 39,
+      "norm_label": "pf.ts"
+    },
+    {
+      "label": "salary.ts",
+      "file_type": "code",
+      "source_file": "src/lib/types/salary.ts",
+      "source_location": "L1",
+      "id": "src_lib_types_salary_ts",
+      "community": 40,
+      "norm_label": "salary.ts"
+    },
+    {
+      "label": "tax.ts",
+      "file_type": "code",
+      "source_file": "src/lib/types/tax.ts",
+      "source_location": "L1",
+      "id": "src_lib_types_tax_ts",
+      "community": 41,
+      "norm_label": "tax.ts"
+    },
+    {
+      "label": "cn.ts",
+      "file_type": "code",
+      "source_file": "src/lib/utils/cn.ts",
+      "source_location": "L1",
+      "id": "src_lib_utils_cn_ts",
+      "community": 13,
+      "norm_label": "cn.ts"
+    },
+    {
+      "label": "cn()",
+      "file_type": "code",
+      "source_file": "src/lib/utils/cn.ts",
+      "source_location": "L4",
+      "id": "utils_cn_cn",
+      "community": 13,
+      "norm_label": "cn()"
+    },
+    {
+      "label": "formatters.ts",
+      "file_type": "code",
+      "source_file": "src/lib/utils/formatters.ts",
+      "source_location": "L1",
+      "id": "src_lib_utils_formatters_ts",
+      "community": 2,
+      "norm_label": "formatters.ts"
+    },
+    {
+      "label": "formatIndianNumber()",
+      "file_type": "code",
+      "source_file": "src/lib/utils/formatters.ts",
+      "source_location": "L1",
+      "id": "utils_formatters_formatindiannumber",
+      "community": 2,
+      "norm_label": "formatindiannumber()"
+    },
+    {
+      "label": "formatINR()",
+      "file_type": "code",
+      "source_file": "src/lib/utils/formatters.ts",
+      "source_location": "L11",
+      "id": "utils_formatters_formatinr",
+      "community": 2,
+      "norm_label": "formatinr()"
+    },
+    {
+      "label": "formatINRCompact()",
+      "file_type": "code",
+      "source_file": "src/lib/utils/formatters.ts",
+      "source_location": "L19",
+      "id": "utils_formatters_formatinrcompact",
+      "community": 2,
+      "norm_label": "formatinrcompact()"
+    },
+    {
+      "label": "validators.ts",
+      "file_type": "code",
+      "source_file": "src/lib/utils/validators.ts",
+      "source_location": "L1",
+      "id": "src_lib_utils_validators_ts",
+      "community": 42,
+      "norm_label": "validators.ts"
+    },
+    {
+      "label": "useCalculatorStore.ts",
+      "file_type": "code",
+      "source_file": "src/store/useCalculatorStore.ts",
+      "source_location": "L1",
+      "id": "src_store_usecalculatorstore_ts",
+      "community": 43,
+      "norm_label": "usecalculatorstore.ts"
+    },
+    {
+      "label": "edge-cases.test.ts",
+      "file_type": "code",
+      "source_file": "src/tests/edge-cases.test.ts",
+      "source_location": "L1",
+      "id": "src_tests_edge_cases_test_ts",
+      "community": 44,
+      "norm_label": "edge-cases.test.ts"
+    },
+    {
+      "label": "fnf.test.ts",
+      "file_type": "code",
+      "source_file": "src/tests/fnf.test.ts",
+      "source_location": "L1",
+      "id": "src_tests_fnf_test_ts",
+      "community": 45,
+      "norm_label": "fnf.test.ts"
+    },
+    {
+      "label": "hra.test.ts",
+      "file_type": "code",
+      "source_file": "src/tests/hra.test.ts",
+      "source_location": "L1",
+      "id": "src_tests_hra_test_ts",
+      "community": 46,
+      "norm_label": "hra.test.ts"
+    },
+    {
+      "label": "pf.test.ts",
+      "file_type": "code",
+      "source_file": "src/tests/pf.test.ts",
+      "source_location": "L1",
+      "id": "src_tests_pf_test_ts",
+      "community": 47,
+      "norm_label": "pf.test.ts"
+    },
+    {
+      "label": "salary.test.ts",
+      "file_type": "code",
+      "source_file": "src/tests/salary.test.ts",
+      "source_location": "L1",
+      "id": "src_tests_salary_test_ts",
+      "community": 48,
+      "norm_label": "salary.test.ts"
+    },
+    {
+      "label": "tax.test.ts",
+      "file_type": "code",
+      "source_file": "src/tests/tax.test.ts",
+      "source_location": "L1",
+      "id": "src_tests_tax_test_ts",
+      "community": 49,
+      "norm_label": "tax.test.ts"
+    },
+    {
+      "label": "Main Entry",
+      "file_type": "code",
+      "source_file": "src/main.tsx",
+      "id": "main",
+      "community": 0,
+      "norm_label": "main entry"
+    },
+    {
+      "label": "App Component",
+      "file_type": "code",
+      "source_file": "src/App.tsx",
+      "id": "app",
+      "community": 0,
+      "norm_label": "app component"
+    },
+    {
+      "label": "HomeScreen",
+      "file_type": "code",
+      "source_file": "src/components/HomeScreen.tsx",
+      "id": "home_screen",
+      "community": 0,
+      "norm_label": "homescreen"
+    },
+    {
+      "label": "Vite Config",
+      "file_type": "code",
+      "source_file": "vite.config.ts",
+      "id": "config_vite",
+      "community": 50,
+      "norm_label": "vite config"
+    },
+    {
+      "label": "Tailwind Config",
+      "file_type": "code",
+      "source_file": "tailwind.config.js",
+      "id": "config_tailwind",
+      "community": 51,
+      "norm_label": "tailwind config"
+    },
+    {
+      "label": "BreakdownLineItem",
+      "file_type": "code",
+      "source_file": "src/components/salary/BreakdownLineItem.tsx",
+      "id": "component_breakdown_item",
+      "community": 0,
+      "norm_label": "breakdownlineitem"
+    },
+    {
+      "label": "MonthlyYearlyToggle",
+      "file_type": "code",
+      "source_file": "src/components/salary/MonthlyYearlyToggle.tsx",
+      "id": "component_monthly_yearly",
+      "community": 0,
+      "norm_label": "monthlyyearlytoggle"
+    },
+    {
+      "label": "RegimeToggle",
+      "file_type": "code",
+      "source_file": "src/components/salary/RegimeToggle.tsx",
+      "id": "component_regime_toggle",
+      "community": 0,
+      "norm_label": "regimetoggle"
+    },
+    {
+      "label": "SalaryInputForm",
+      "file_type": "code",
+      "source_file": "src/components/salary/SalaryInputForm.tsx",
+      "id": "component_salary_form",
+      "community": 52,
+      "norm_label": "salaryinputform"
+    },
+    {
+      "label": "useSalaryCalculation",
+      "file_type": "code",
+      "source_file": "src/hooks/useSalaryCalculation.ts",
+      "id": "hook_salary_calc",
+      "community": 3,
+      "norm_label": "usesalarycalculation"
+    },
+    {
+      "label": "Tax Logic",
+      "file_type": "code",
+      "source_file": "src/lib/calculations/tax.ts",
+      "id": "logic_tax",
+      "community": 3,
+      "norm_label": "tax logic"
+    },
+    {
+      "label": "PF Logic",
+      "file_type": "code",
+      "source_file": "src/lib/calculations/pf.ts",
+      "id": "logic_pf",
+      "community": 3,
+      "norm_label": "pf logic"
+    },
+    {
+      "label": "HRA Logic",
+      "file_type": "code",
+      "source_file": "src/lib/calculations/hra.ts",
+      "id": "logic_hra",
+      "community": 3,
+      "norm_label": "hra logic"
+    },
+    {
+      "label": "Salary Components",
+      "file_type": "code",
+      "source_file": "src/lib/calculations/salary.ts",
+      "id": "logic_salary",
+      "community": 3,
+      "norm_label": "salary components"
+    },
+    {
+      "label": "Tax Slabs",
+      "file_type": "code",
+      "source_file": "src/lib/config/tax-slabs.ts",
+      "id": "config_tax_slabs",
+      "community": 3,
+      "norm_label": "tax slabs"
+    },
+    {
+      "label": "Button UI",
+      "file_type": "code",
+      "source_file": "src/components/ui/button.tsx",
+      "id": "ui_button",
+      "community": 53,
+      "norm_label": "button ui"
+    },
+    {
+      "label": "CalculatorStore",
+      "file_type": "code",
+      "source_file": "src/store/useCalculatorStore.ts",
+      "id": "store_calc",
+      "community": 0,
+      "norm_label": "calculatorstore"
+    },
+    {
+      "label": "Formatters",
+      "file_type": "code",
+      "source_file": "src/lib/utils/formatters.ts",
+      "id": "utils_formatters",
+      "community": 54,
+      "norm_label": "formatters"
+    },
+    {
+      "label": "Project README",
+      "file_type": "document",
+      "source_file": "README.md",
+      "id": "doc_readme",
+      "community": 0,
+      "norm_label": "project readme"
+    },
+    {
+      "label": "Index HTML",
+      "file_type": "document",
+      "source_file": "index.html",
+      "id": "doc_html",
+      "community": 55,
+      "norm_label": "index html"
+    },
+    {
+      "label": "Hero Image",
+      "file_type": "image",
+      "source_file": "src/assets/hero.png",
+      "id": "img_hero",
+      "community": 56,
+      "norm_label": "hero image"
+    },
+    {
+      "label": "Salary Tests",
+      "file_type": "code",
+      "source_file": "src/tests/salary.test.ts",
+      "id": "test_salary",
+      "community": 3,
+      "norm_label": "salary tests"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_app_tsx",
+      "target": "src_app_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_main_tsx",
+      "target": "src_app_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/HomeScreen.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_components_homescreen_tsx",
+      "target": "salary_breakdownlineitem_breakdownlineitem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/HomeScreen.tsx",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "src_components_homescreen_tsx",
+      "target": "components_homescreen_getamount",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/HomeScreen.tsx",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "src_components_homescreen_tsx",
+      "target": "components_homescreen_handlecalculate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/HomeScreen.tsx",
+      "source_location": "L314",
+      "weight": 1.0,
+      "source": "src_components_homescreen_tsx",
+      "target": "components_homescreen_trim",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Navigation.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_components_navigation_tsx",
+      "target": "components_navigation_navigation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/SalaryBreakdownScreen.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_components_salarybreakdownscreen_tsx",
+      "target": "components_salarybreakdownscreen_salarybreakdownscreen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/components/SalaryBreakdownScreen.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "components_salarybreakdownscreen_salarybreakdownscreen",
+      "target": "hooks_usesalarycalculation_usesalarycalculation"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/layout/Footer.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_components_layout_footer_tsx",
+      "target": "layout_footer_footer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/layout/Header.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_components_layout_header_tsx",
+      "target": "layout_header_header",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/layout/PageContainer.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_layout_pagecontainer_tsx",
+      "target": "layout_pagecontainer_pagecontainer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/salary/BreakdownLineItem.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "src_components_salary_breakdownlineitem_tsx",
+      "target": "salary_breakdownlineitem_breakdownlineitem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/salary/SalaryBreakdownCard.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_components_salary_salarybreakdowncard_tsx",
+      "target": "salary_breakdownlineitem_breakdownlineitem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/components/salary/BreakdownLineItem.tsx",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "salary_breakdownlineitem_breakdownlineitem",
+      "target": "utils_formatters_formatinr"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/salary/MonthlyYearlyToggle.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_components_salary_monthlyyearlytoggle_tsx",
+      "target": "salary_monthlyyearlytoggle_monthlyyearlytoggle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/salary/SalaryBreakdownCard.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_components_salary_salarybreakdowncard_tsx",
+      "target": "salary_monthlyyearlytoggle_monthlyyearlytoggle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/salary/RegimeComparisonCard.tsx",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "src_components_salary_regimecomparisoncard_tsx",
+      "target": "salary_regimecomparisoncard_getrecommendationtext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/salary/RegimeComparisonCard.tsx",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "src_components_salary_regimecomparisoncard_tsx",
+      "target": "salary_regimecomparisoncard_getrecommendationcolor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/components/salary/RegimeComparisonCard.tsx",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "salary_regimecomparisoncard_getrecommendationtext",
+      "target": "utils_formatters_formatinr"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/salary/RegimeToggle.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_components_salary_regimetoggle_tsx",
+      "target": "salary_regimetoggle_regimetoggle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/salary/SalaryBreakdownCard.tsx",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "src_components_salary_salarybreakdowncard_tsx",
+      "target": "salary_salarybreakdowncard_getamount",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/salary/SalaryBreakdownCard.tsx",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "src_components_salary_salarybreakdowncard_tsx",
+      "target": "salary_salarybreakdowncard_formatwithunit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/components/salary/SalaryBreakdownCard.tsx",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "salary_salarybreakdowncard_formatwithunit",
+      "target": "utils_formatters_formatinr"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/useSalaryCalculation.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_hooks_usesalarycalculation_ts",
+      "target": "hooks_usesalarycalculation_usesalarycalculation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/calculations/hra.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_lib_calculations_hra_ts",
+      "target": "calculations_hra_calculatehraexemption",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/calculations/salary.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "src_lib_calculations_salary_ts",
+      "target": "calculations_hra_calculatehraexemption",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/lib/calculations/salary.ts",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "calculations_salary_calculatesalarybreakdown",
+      "target": "calculations_hra_calculatehraexemption"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/calculations/salary.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "src_lib_calculations_salary_ts",
+      "target": "calculations_tax_calculatetaxresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/calculations/salary.ts",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "src_lib_calculations_salary_ts",
+      "target": "calculations_salary_calculatesalarybreakdown",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/lib/calculations/salary.ts",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "calculations_salary_calculatesalarybreakdown",
+      "target": "calculations_tax_calculatetaxresult"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/calculations/tax.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_lib_calculations_tax_ts",
+      "target": "calculations_tax_calculatetaxresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/calculations/tax.ts",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "src_lib_calculations_tax_ts",
+      "target": "calculations_tax_calculatetax",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/calculations/tax.ts",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "calculations_tax_calculatetax",
+      "target": "calculations_tax_calculatetaxresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/utils/cn.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_lib_utils_cn_ts",
+      "target": "utils_cn_cn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/utils/formatters.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_lib_utils_formatters_ts",
+      "target": "utils_formatters_formatindiannumber",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/utils/formatters.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "src_lib_utils_formatters_ts",
+      "target": "utils_formatters_formatinr",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/utils/formatters.ts",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "src_lib_utils_formatters_ts",
+      "target": "utils_formatters_formatinrcompact",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/utils/formatters.ts",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "utils_formatters_formatinr",
+      "target": "utils_formatters_formatindiannumber",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/utils/formatters.ts",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "utils_formatters_formatinrcompact",
+      "target": "utils_formatters_formatindiannumber",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main.tsx",
+      "source": "main",
+      "target": "app"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/App.tsx",
+      "source": "app",
+      "target": "home_screen"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/HomeScreen.tsx",
+      "source": "home_screen",
+      "target": "component_breakdown_item"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "src/components/HomeScreen.tsx",
+      "source": "home_screen",
+      "target": "component_monthly_yearly"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/components/HomeScreen.tsx",
+      "source": "home_screen",
+      "target": "component_regime_toggle"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/HomeScreen.tsx",
+      "source": "home_screen",
+      "target": "store_calc"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "README.md",
+      "source": "doc_readme",
+      "target": "home_screen"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/hooks/useSalaryCalculation.ts",
+      "source": "hook_salary_calc",
+      "target": "logic_tax"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/hooks/useSalaryCalculation.ts",
+      "source": "hook_salary_calc",
+      "target": "logic_pf"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/hooks/useSalaryCalculation.ts",
+      "source": "hook_salary_calc",
+      "target": "logic_hra"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/hooks/useSalaryCalculation.ts",
+      "source": "hook_salary_calc",
+      "target": "logic_salary"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/calculations/tax.ts",
+      "source": "logic_tax",
+      "target": "config_tax_slabs"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/tests/salary.test.ts",
+      "source": "test_salary",
+      "target": "logic_salary"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "core_logic",
+      "label": "Core Calculation Pipeline",
+      "nodes": [
+        "logic_tax",
+        "logic_pf",
+        "logic_hra",
+        "logic_salary"
+      ],
+      "relation": "implement",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/lib/calculations/index.ts"
+    }
+  ],
+  "built_at_commit": "2e0ed7607c80f034a81e1ed9cb3925c5a31145be"
+}

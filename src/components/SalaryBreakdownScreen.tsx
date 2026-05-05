@@ -1,12 +1,11 @@
 import { useCalculatorStore } from '@/store/useCalculatorStore'
-import { useSalaryCalculation } from '@/hooks/useSalaryCalculation'
 import { Navigation } from '@/components/Navigation'
 import { SalaryBreakdownCard } from '@/components/salary/SalaryBreakdownCard'
 import { RegimeComparisonCard } from '@/components/salary/RegimeComparisonCard'
+import { PFCalculator } from '@/components/salary/pf/PFCalculator'
 
 export function SalaryBreakdownScreen() {
   const { setViewMode } = useCalculatorStore()
-  const breakdown = useSalaryCalculation()
 
   const handleBackToCalculator = () => {
     setViewMode('MONTHLY') // Reset to monthly view when going back
@@ -34,6 +33,13 @@ export function SalaryBreakdownScreen() {
           {/* Right Column - Regime Comparison */}
           <div className="flex justify-center">
             <RegimeComparisonCard />
+          </div>
+        </div>
+
+        {/* Full Width Bottom Section - PF Calculator */}
+        <div className="mt-8 flex justify-center">
+          <div className="w-full">
+            <PFCalculator />
           </div>
         </div>
       </div>

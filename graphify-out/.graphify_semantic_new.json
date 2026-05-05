@@ -1,0 +1,260 @@
+{
+  "nodes": [
+    {
+      "id": "main",
+      "label": "Main Entry",
+      "file_type": "code",
+      "source_file": "src/main.tsx"
+    },
+    {
+      "id": "app",
+      "label": "App Component",
+      "file_type": "code",
+      "source_file": "src/App.tsx"
+    },
+    {
+      "id": "home_screen",
+      "label": "HomeScreen",
+      "file_type": "code",
+      "source_file": "src/components/HomeScreen.tsx"
+    },
+    {
+      "id": "config_vite",
+      "label": "Vite Config",
+      "file_type": "code",
+      "source_file": "vite.config.ts"
+    },
+    {
+      "id": "config_tailwind",
+      "label": "Tailwind Config",
+      "file_type": "code",
+      "source_file": "tailwind.config.js"
+    },
+    {
+      "id": "component_breakdown_item",
+      "label": "BreakdownLineItem",
+      "file_type": "code",
+      "source_file": "src/components/salary/BreakdownLineItem.tsx"
+    },
+    {
+      "id": "component_monthly_yearly",
+      "label": "MonthlyYearlyToggle",
+      "file_type": "code",
+      "source_file": "src/components/salary/MonthlyYearlyToggle.tsx"
+    },
+    {
+      "id": "component_regime_toggle",
+      "label": "RegimeToggle",
+      "file_type": "code",
+      "source_file": "src/components/salary/RegimeToggle.tsx"
+    },
+    {
+      "id": "component_salary_form",
+      "label": "SalaryInputForm",
+      "file_type": "code",
+      "source_file": "src/components/salary/SalaryInputForm.tsx"
+    },
+    {
+      "id": "hook_salary_calc",
+      "label": "useSalaryCalculation",
+      "file_type": "code",
+      "source_file": "src/hooks/useSalaryCalculation.ts"
+    },
+    {
+      "id": "logic_tax",
+      "label": "Tax Logic",
+      "file_type": "code",
+      "source_file": "src/lib/calculations/tax.ts"
+    },
+    {
+      "id": "logic_pf",
+      "label": "PF Logic",
+      "file_type": "code",
+      "source_file": "src/lib/calculations/pf.ts"
+    },
+    {
+      "id": "logic_hra",
+      "label": "HRA Logic",
+      "file_type": "code",
+      "source_file": "src/lib/calculations/hra.ts"
+    },
+    {
+      "id": "logic_salary",
+      "label": "Salary Components",
+      "file_type": "code",
+      "source_file": "src/lib/calculations/salary.ts"
+    },
+    {
+      "id": "config_tax_slabs",
+      "label": "Tax Slabs",
+      "file_type": "code",
+      "source_file": "src/lib/config/tax-slabs.ts"
+    },
+    {
+      "id": "ui_button",
+      "label": "Button UI",
+      "file_type": "code",
+      "source_file": "src/components/ui/button.tsx"
+    },
+    {
+      "id": "store_calc",
+      "label": "CalculatorStore",
+      "file_type": "code",
+      "source_file": "src/store/useCalculatorStore.ts"
+    },
+    {
+      "id": "utils_formatters",
+      "label": "Formatters",
+      "file_type": "code",
+      "source_file": "src/lib/utils/formatters.ts"
+    },
+    {
+      "id": "doc_readme",
+      "label": "Project README",
+      "file_type": "document",
+      "source_file": "README.md"
+    },
+    {
+      "id": "doc_html",
+      "label": "Index HTML",
+      "file_type": "document",
+      "source_file": "index.html"
+    },
+    {
+      "id": "img_hero",
+      "label": "Hero Image",
+      "file_type": "image",
+      "source_file": "src/assets/hero.png"
+    },
+    {
+      "id": "test_salary",
+      "label": "Salary Tests",
+      "file_type": "code",
+      "source_file": "src/tests/salary.test.ts"
+    }
+  ],
+  "edges": [
+    {
+      "source": "main",
+      "target": "app",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main.tsx"
+    },
+    {
+      "source": "app",
+      "target": "home_screen",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/App.tsx"
+    },
+    {
+      "source": "home_screen",
+      "target": "component_breakdown_item",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/HomeScreen.tsx"
+    },
+    {
+      "source": "home_screen",
+      "target": "component_monthly_yearly",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "src/components/HomeScreen.tsx"
+    },
+    {
+      "source": "home_screen",
+      "target": "component_regime_toggle",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/components/HomeScreen.tsx"
+    },
+    {
+      "source": "hook_salary_calc",
+      "target": "logic_tax",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/hooks/useSalaryCalculation.ts"
+    },
+    {
+      "source": "hook_salary_calc",
+      "target": "logic_pf",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/hooks/useSalaryCalculation.ts"
+    },
+    {
+      "source": "hook_salary_calc",
+      "target": "logic_hra",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/hooks/useSalaryCalculation.ts"
+    },
+    {
+      "source": "hook_salary_calc",
+      "target": "logic_salary",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/hooks/useSalaryCalculation.ts"
+    },
+    {
+      "source": "logic_tax",
+      "target": "config_tax_slabs",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/calculations/tax.ts"
+    },
+    {
+      "source": "home_screen",
+      "target": "store_calc",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/HomeScreen.tsx"
+    },
+    {
+      "source": "doc_readme",
+      "target": "home_screen",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "README.md"
+    },
+    {
+      "source": "test_salary",
+      "target": "logic_salary",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/tests/salary.test.ts"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "core_logic",
+      "label": "Core Calculation Pipeline",
+      "nodes": [
+        "logic_tax",
+        "logic_pf",
+        "logic_hra",
+        "logic_salary"
+      ],
+      "relation": "implement",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/lib/calculations/index.ts"
+    }
+  ],
+  "input_tokens": 3700,
+  "output_tokens": 2350
+}

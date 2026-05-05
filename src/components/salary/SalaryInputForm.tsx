@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react'
 import { useCalculatorStore } from '@/store/useCalculatorStore'
 import { formatINR } from '@/lib/utils/formatters'
 import { MIN_CTC, MAX_CTC, MIN_BASIC_PERCENT, MAX_BASIC_PERCENT } from '@/lib/config/constants'
-import type { CityType, EPFType } from '@/lib/types/salary'
 
 export function SalaryInputForm() {
   const {
@@ -25,7 +24,6 @@ export function SalaryInputForm() {
 
   const [ctcError, setCtcError] = useState('')
   const [variableError, setVariableError] = useState('')
-  const [basicWarning, setBasicWarning] = useState('')
 
   // Validation effects
   useEffect(() => {
@@ -45,16 +43,6 @@ export function SalaryInputForm() {
       setVariableError('')
     }
   }, [variableComponent, ctc])
-
-  useEffect(() => {
-    if (basicPercent < MIN_BASIC_PERCENT) {
-      setBasicWarning('')
-    } else if (basicPercent > MAX_BASIC_PERCENT) {
-      setBasicWarning('')
-    } else {
-      setBasicWarning('')
-    }
-  }, [basicPercent])
 
   const basicAnnual = ctc * (basicPercent / 100)
 

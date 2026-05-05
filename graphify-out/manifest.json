@@ -1,0 +1,250 @@
+{
+  "D:\\Project\\Salary Decoder\\eslint.config.js": {
+    "mtime": 1777977374.2861426,
+    "hash": "0355276bc79439afe3c53e3a2470ca1e"
+  },
+  "D:\\Project\\Salary Decoder\\postcss.config.js": {
+    "mtime": 1777977722.205368,
+    "hash": "88eaead9bd51840cd9d816b3761009a9"
+  },
+  "D:\\Project\\Salary Decoder\\tailwind.config.js": {
+    "mtime": 1777978255.8881545,
+    "hash": "9f28ce8cdfbf6da6f2c50bbc97e4ed83"
+  },
+  "D:\\Project\\Salary Decoder\\vite.config.ts": {
+    "mtime": 1777977746.2992427,
+    "hash": "8762c2de63ea8511a64c228571e17091"
+  },
+  "D:\\Project\\Salary Decoder\\vitest.config.ts": {
+    "mtime": 1777977849.160637,
+    "hash": "f38af18b01cf9760235efdf3ee70664c"
+  },
+  "D:\\Project\\Salary Decoder\\src\\App.tsx": {
+    "mtime": 1777988994.2161927,
+    "hash": "622b281ea4ea873e74fdfd010dc4d6cf"
+  },
+  "D:\\Project\\Salary Decoder\\src\\main.tsx": {
+    "mtime": 1777977374.8207371,
+    "hash": "787e5a07efeb2bf6209d5937195f2f68"
+  },
+  "D:\\Project\\Salary Decoder\\src\\components\\HomeScreen.tsx": {
+    "mtime": 1777991540.7705867,
+    "hash": "60fabd367a59e36ce2e8d031219d4673"
+  },
+  "D:\\Project\\Salary Decoder\\src\\components\\Navigation.tsx": {
+    "mtime": 1777987947.5028403,
+    "hash": "f9ec59a7e0cefd5936aeb83b4e8bf37f"
+  },
+  "D:\\Project\\Salary Decoder\\src\\components\\SalaryBreakdownScreen.tsx": {
+    "mtime": 1777988383.254524,
+    "hash": "d7ead252fd0fa33808756d072a17afd9"
+  },
+  "D:\\Project\\Salary Decoder\\src\\components\\layout\\Footer.tsx": {
+    "mtime": 1777986364.9917097,
+    "hash": "3becef65d6381491fc3f6819fdedaeb9"
+  },
+  "D:\\Project\\Salary Decoder\\src\\components\\layout\\Header.tsx": {
+    "mtime": 1777986361.6719084,
+    "hash": "38b654f0349dcfa8f6e6cb041c475972"
+  },
+  "D:\\Project\\Salary Decoder\\src\\components\\layout\\PageContainer.tsx": {
+    "mtime": 1777986368.5347934,
+    "hash": "82e48e6b9af7828bf641f4f9d2f20504"
+  },
+  "D:\\Project\\Salary Decoder\\src\\components\\salary\\BreakdownLineItem.tsx": {
+    "mtime": 1777987655.1036036,
+    "hash": "a7226aa370a2122a8ef8057ffdbcc82d"
+  },
+  "D:\\Project\\Salary Decoder\\src\\components\\salary\\MonthlyYearlyToggle.tsx": {
+    "mtime": 1777988986.6568635,
+    "hash": "cfe55bdb1801bea5796a1b63fd8425e9"
+  },
+  "D:\\Project\\Salary Decoder\\src\\components\\salary\\RegimeComparisonCard.tsx": {
+    "mtime": 1777987707.4426086,
+    "hash": "4ffd868af8706c0e4fff19ffdbd7534e"
+  },
+  "D:\\Project\\Salary Decoder\\src\\components\\salary\\RegimeToggle.tsx": {
+    "mtime": 1777988972.8605866,
+    "hash": "faa835b2bf142b4f4c20768e300dfe44"
+  },
+  "D:\\Project\\Salary Decoder\\src\\components\\salary\\SalaryBreakdownCard.tsx": {
+    "mtime": 1777987690.7141688,
+    "hash": "38b83268c897b97dfd1966898768c6b9"
+  },
+  "D:\\Project\\Salary Decoder\\src\\components\\salary\\SalaryInputForm.tsx": {
+    "mtime": 1777987619.794825,
+    "hash": "71991683e13e4fa4ec9d03d898478692"
+  },
+  "D:\\Project\\Salary Decoder\\src\\components\\ui\\accordion.tsx": {
+    "mtime": 1777978303.624428,
+    "hash": "89fc5d7fdfbf1cdb8d4819b4cf333cf5"
+  },
+  "D:\\Project\\Salary Decoder\\src\\components\\ui\\button.tsx": {
+    "mtime": 1777978281.7575047,
+    "hash": "4940908a0ec613bc8586ce972e26a1e3"
+  },
+  "D:\\Project\\Salary Decoder\\src\\components\\ui\\card.tsx": {
+    "mtime": 1777978353.3566885,
+    "hash": "1fa5860a541a8cec781a155203ac123f"
+  },
+  "D:\\Project\\Salary Decoder\\src\\components\\ui\\input.tsx": {
+    "mtime": 1777978286.2359471,
+    "hash": "c2c8620fd5efba63171964aa72740245"
+  },
+  "D:\\Project\\Salary Decoder\\src\\components\\ui\\popover.tsx": {
+    "mtime": 1777978311.1554852,
+    "hash": "1dff29038d63005f6ae28b6ca20cf1a0"
+  },
+  "D:\\Project\\Salary Decoder\\src\\components\\ui\\slider.tsx": {
+    "mtime": 1777978319.558212,
+    "hash": "a0c720879574dd1cc2c5acf040954a3e"
+  },
+  "D:\\Project\\Salary Decoder\\src\\components\\ui\\tabs.tsx": {
+    "mtime": 1777978329.373075,
+    "hash": "d619bab2ad24372021ec608ad8144eaf"
+  },
+  "D:\\Project\\Salary Decoder\\src\\components\\ui\\toggle-group.tsx": {
+    "mtime": 1777978341.7232764,
+    "hash": "b610c1c44aebfe0183862a4177f4b35a"
+  },
+  "D:\\Project\\Salary Decoder\\src\\components\\ui\\tooltip.tsx": {
+    "mtime": 1777978334.7731943,
+    "hash": "eae76c256fb6f4ea142623aa396a84f3"
+  },
+  "D:\\Project\\Salary Decoder\\src\\hooks\\useFnFCalculation.ts": {
+    "mtime": 1777978484.708097,
+    "hash": "268fc98a2212665d9d1df3a279dcc0fd"
+  },
+  "D:\\Project\\Salary Decoder\\src\\hooks\\usePFCalculation.ts": {
+    "mtime": 1777978480.2261252,
+    "hash": "fa4e2716a1c1d4ec1084a536a96f34b2"
+  },
+  "D:\\Project\\Salary Decoder\\src\\hooks\\useSalaryCalculation.ts": {
+    "mtime": 1777986348.756431,
+    "hash": "78fc172faca42e1fa3d016b8e96f1c4a"
+  },
+  "D:\\Project\\Salary Decoder\\src\\lib\\calculations\\fnf.ts": {
+    "mtime": 1777978462.6746504,
+    "hash": "7b6b359e35cacfd90d63bc09b5e66e1c"
+  },
+  "D:\\Project\\Salary Decoder\\src\\lib\\calculations\\hra.ts": {
+    "mtime": 1777979721.0531573,
+    "hash": "9b0de334dbdfd646ff2c69561a4507a3"
+  },
+  "D:\\Project\\Salary Decoder\\src\\lib\\calculations\\index.ts": {
+    "mtime": 1777978425.3206797,
+    "hash": "ca21402166dff61becb091bbf6d30d21"
+  },
+  "D:\\Project\\Salary Decoder\\src\\lib\\calculations\\pf.ts": {
+    "mtime": 1777978457.3056672,
+    "hash": "e951723acf7909516b2726ff86572a6e"
+  },
+  "D:\\Project\\Salary Decoder\\src\\lib\\calculations\\salary.ts": {
+    "mtime": 1777979758.5734782,
+    "hash": "e18072c3b3ec1059d2fe5af006925e9a"
+  },
+  "D:\\Project\\Salary Decoder\\src\\lib\\calculations\\tax.ts": {
+    "mtime": 1777980066.620965,
+    "hash": "832a89ef9d83e8e8eecfcd86bc4ec499"
+  },
+  "D:\\Project\\Salary Decoder\\src\\lib\\config\\constants.ts": {
+    "mtime": 1777977768.9164178,
+    "hash": "e1a9429ad2466949f76cda42e1664ef8"
+  },
+  "D:\\Project\\Salary Decoder\\src\\lib\\config\\recovery-labels.ts": {
+    "mtime": 1777978467.087358,
+    "hash": "8a930cf0679171054d31958ef3effd42"
+  },
+  "D:\\Project\\Salary Decoder\\src\\lib\\config\\tax-slabs.ts": {
+    "mtime": 1777977777.324625,
+    "hash": "90c4d8b0e9bc2ac1e4bbcf2300613ca0"
+  },
+  "D:\\Project\\Salary Decoder\\src\\lib\\types\\fnf.ts": {
+    "mtime": 1777977815.033542,
+    "hash": "8b8278da0486579240daad843962a481"
+  },
+  "D:\\Project\\Salary Decoder\\src\\lib\\types\\index.ts": {
+    "mtime": 1777978432.0736823,
+    "hash": "27b3cd031b66913f088c67c78de929e8"
+  },
+  "D:\\Project\\Salary Decoder\\src\\lib\\types\\pf.ts": {
+    "mtime": 1777977810.7502277,
+    "hash": "1325c225627e518c5daffa7550cc3b35"
+  },
+  "D:\\Project\\Salary Decoder\\src\\lib\\types\\salary.ts": {
+    "mtime": 1777977799.9355164,
+    "hash": "91bf7ccecb04a46ce7822702ecd5bb28"
+  },
+  "D:\\Project\\Salary Decoder\\src\\lib\\types\\tax.ts": {
+    "mtime": 1777977807.8649485,
+    "hash": "63f70053e9bab017ba551908eb6b4505"
+  },
+  "D:\\Project\\Salary Decoder\\src\\lib\\utils\\cn.ts": {
+    "mtime": 1777977783.2837548,
+    "hash": "15c2ae930fd129963177f7c51125fb17"
+  },
+  "D:\\Project\\Salary Decoder\\src\\lib\\utils\\formatters.ts": {
+    "mtime": 1777977790.0514843,
+    "hash": "6629c343f4184542ef02550fc8af22b6"
+  },
+  "D:\\Project\\Salary Decoder\\src\\lib\\utils\\validators.ts": {
+    "mtime": 1777978470.5893552,
+    "hash": "4cc354a0303d229e18d97b1d13170be2"
+  },
+  "D:\\Project\\Salary Decoder\\src\\store\\useCalculatorStore.ts": {
+    "mtime": 1777977831.0338495,
+    "hash": "257516858f414d34f952cee564ee2bea"
+  },
+  "D:\\Project\\Salary Decoder\\src\\tests\\edge-cases.test.ts": {
+    "mtime": 1777977711.4153554,
+    "hash": "3bab25a3e651a9e4a00473d2257b99f9"
+  },
+  "D:\\Project\\Salary Decoder\\src\\tests\\fnf.test.ts": {
+    "mtime": 1777977711.4073565,
+    "hash": "3bab25a3e651a9e4a00473d2257b99f9"
+  },
+  "D:\\Project\\Salary Decoder\\src\\tests\\hra.test.ts": {
+    "mtime": 1777977711.4053507,
+    "hash": "3bab25a3e651a9e4a00473d2257b99f9"
+  },
+  "D:\\Project\\Salary Decoder\\src\\tests\\pf.test.ts": {
+    "mtime": 1777977711.447741,
+    "hash": "3bab25a3e651a9e4a00473d2257b99f9"
+  },
+  "D:\\Project\\Salary Decoder\\src\\tests\\salary.test.ts": {
+    "mtime": 1777977868.317549,
+    "hash": "0b8e362af6c1f16c8984568f4441c9cb"
+  },
+  "D:\\Project\\Salary Decoder\\src\\tests\\tax.test.ts": {
+    "mtime": 1777977880.569066,
+    "hash": "d26ca35977af2ed6ba7d4ee79561548a"
+  },
+  "D:\\Project\\Salary Decoder\\index.html": {
+    "mtime": 1777977375.048784,
+    "hash": "48bfade4368a472ad62fc7497c01e17d"
+  },
+  "D:\\Project\\Salary Decoder\\README.md": {
+    "mtime": 1777978551.9386604,
+    "hash": "4373ac3d6a85cf0217a18d00ab4c6a1b"
+  },
+  "D:\\Project\\Salary Decoder\\public\\favicon.svg": {
+    "mtime": 1777977374.5688987,
+    "hash": "7e840862161341271697daa99a40d76b"
+  },
+  "D:\\Project\\Salary Decoder\\public\\icons.svg": {
+    "mtime": 1777977374.617646,
+    "hash": "3b4fcfcf393eca4d264dca4a4663bc37"
+  },
+  "D:\\Project\\Salary Decoder\\src\\assets\\hero.png": {
+    "mtime": 1777977374.4977844,
+    "hash": "aead493361b27e7510691c5d7072dfc1"
+  },
+  "D:\\Project\\Salary Decoder\\src\\assets\\react.svg": {
+    "mtime": 1777977374.670897,
+    "hash": "f0402b67b6ce880f65666bb49e841696"
+  },
+  "D:\\Project\\Salary Decoder\\src\\assets\\vite.svg": {
+    "mtime": 1777977374.7247007,
+    "hash": "9960a24288958394ac50e57ff638b036"
+  }
+}

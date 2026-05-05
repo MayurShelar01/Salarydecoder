@@ -1,4 +1,4 @@
-﻿import { useMemo } from 'react'
+import { useMemo } from 'react'
 import { useCalculatorStore } from '@/store/useCalculatorStore'
 import { calculateSalaryBreakdown } from '@/lib/calculations/salary'
 import type { SalaryInputs, SalaryBreakdown } from '@/lib/types/salary'
@@ -26,5 +26,14 @@ export function useSalaryCalculation(): SalaryBreakdown {
     investments,
   }
 
-  return useMemo(() => calculateSalaryBreakdown(inputs), [inputs])
+  return useMemo(() => calculateSalaryBreakdown(inputs), [
+    regime,
+    ctc,
+    variableComponent,
+    basicPercent,
+    cityType,
+    monthlyRent,
+    epfType,
+    investments
+  ])
 }

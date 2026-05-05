@@ -1,0 +1,23 @@
+{
+  "nodes": [
+    {"id": "hook_salary_calc", "label": "useSalaryCalculation", "file_type": "code", "source_file": "src/hooks/useSalaryCalculation.ts"},
+    {"id": "logic_tax", "label": "Tax Logic", "file_type": "code", "source_file": "src/lib/calculations/tax.ts"},
+    {"id": "logic_pf", "label": "PF Logic", "file_type": "code", "source_file": "src/lib/calculations/pf.ts"},
+    {"id": "logic_hra", "label": "HRA Logic", "file_type": "code", "source_file": "src/lib/calculations/hra.ts"},
+    {"id": "logic_salary", "label": "Salary Components", "file_type": "code", "source_file": "src/lib/calculations/salary.ts"},
+    {"id": "config_tax_slabs", "label": "Tax Slabs", "file_type": "code", "source_file": "src/lib/config/tax-slabs.ts"},
+    {"id": "ui_button", "label": "Button UI", "file_type": "code", "source_file": "src/components/ui/button.tsx"}
+  ],
+  "edges": [
+    {"source": "hook_salary_calc", "target": "logic_tax", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "src/hooks/useSalaryCalculation.ts"},
+    {"source": "hook_salary_calc", "target": "logic_pf", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "src/hooks/useSalaryCalculation.ts"},
+    {"source": "hook_salary_calc", "target": "logic_hra", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "src/hooks/useSalaryCalculation.ts"},
+    {"source": "hook_salary_calc", "target": "logic_salary", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "src/hooks/useSalaryCalculation.ts"},
+    {"source": "logic_tax", "target": "config_tax_slabs", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "src/lib/calculations/tax.ts"}
+  ],
+  "hyperedges": [
+    {"id": "core_logic", "label": "Core Calculation Pipeline", "nodes": ["logic_tax", "logic_pf", "logic_hra", "logic_salary"], "relation": "implement", "confidence": "INFERRED", "confidence_score": 0.85, "source_file": "src/lib/calculations/index.ts"}
+  ],
+  "input_tokens": 1500,
+  "output_tokens": 950
+}

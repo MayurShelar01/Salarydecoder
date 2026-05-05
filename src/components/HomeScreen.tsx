@@ -3,6 +3,8 @@ import { useCalculatorStore } from '@/store/useCalculatorStore'
 import { useSalaryCalculation } from '@/hooks/useSalaryCalculation'
 import { formatINR } from '@/lib/utils/formatters'
 import { BreakdownLineItem } from './salary/BreakdownLineItem'
+import { RecoveryLabel } from './salary/RecoveryLabel'
+import { PFCalculator } from './salary/pf/PFCalculator'
 
 
 export function HomeScreen() {
@@ -241,7 +243,7 @@ export function HomeScreen() {
           <input
             type="range"
             min="25"
-            max="70"
+            max="50"
             value={basicPercent}
             onChange={(e) => setBasicPercent(parseInt(e.target.value))}
             className="slider-input"
@@ -249,7 +251,7 @@ export function HomeScreen() {
               width: '100%',
               height: 4,
               borderRadius: 2,
-              background: `linear-gradient(to right, var(--color-accent) 0%, var(--color-accent) ${((basicPercent - 25) / 45) * 100}%, var(--color-accent-light) ${((basicPercent - 25) / 45) * 100}%, var(--color-accent-light) 100%)`,
+              background: `linear-gradient(to right, var(--color-accent) 0%, var(--color-accent) ${((basicPercent - 25) / 25) * 100}%, var(--color-accent-light) ${((basicPercent - 25) / 25) * 100}%, var(--color-accent-light) 100%)`,
               outline: 'none',
               cursor: 'pointer',
             }}
@@ -311,12 +313,12 @@ export function HomeScreen() {
                 lineHeight: 1.2,
                 color: 'var(--color-positive)',
               }}>
-                ₹ {formatINR(monthlyNetInhand).replace('₹', '').trim()}{' '}
+                ₹ {formatINR(getAmount(annualNetInhand, monthlyNetInhand)).replace('₹', '').trim()}{' '}
                 <span style={{
                   fontSize: 13,
                   fontWeight: 400,
                   color: 'var(--color-text-secondary)',
-                }}>/month</span>
+                }}>{viewMode === 'YEARLY' ? '/year' : '/month'}</span>
               </p>
             </div>
 
@@ -386,16 +388,19 @@ export function HomeScreen() {
                 label="Basic Salary"
                 amount={getAmount(basic, basic / 12)}
                 dotColor="var(--color-dot-basic)"
+                recoveryTag="RECEIVED_NOW"
               />
               <BreakdownLineItem
                 label="HRA"
                 amount={getAmount(hra, hra / 12)}
                 dotColor="var(--color-dot-hra)"
+                recoveryTag="RECEIVED_NOW"
               />
               <BreakdownLineItem
                 label="Special Allowances"
                 amount={getAmount(specialAllowance, specialAllowance / 12)}
                 dotColor="var(--color-dot-allowance)"
+                recoveryTag="RECEIVED_NOW"
               />
             </div>
 
@@ -408,8 +413,9 @@ export function HomeScreen() {
               alignItems: 'center',
               justifyContent: 'space-between',
             }}>
-              <span style={{ fontSize: 14, fontWeight: 600, color: 'var(--color-text-primary)' }}>
+              <span style={{ fontSize: 14, fontWeight: 600, color: 'var(--color-text-primary)', display: 'flex', alignItems: 'center', gap: 10 }}>
                 Gross Salary
+                <RecoveryLabel tag="RECEIVED_NOW" />
               </span>
               <span style={{ fontSize: 14, fontWeight: 600, color: 'var(--color-text-primary)' }}>
                 ₹ {formatINR(getAmount(grossSalary, monthlyGross)).replace('₹', '').trim()}
@@ -434,12 +440,14 @@ export function HomeScreen() {
                 amount={getAmount(employeeEPF, monthlyEmployeeEPF)}
                 isDeduction
                 dotColor="var(--color-dot-epf)"
+                recoveryTag="RECEIVED_LATER"
               />
               <BreakdownLineItem
                 label="Tax Payable"
                 amount={getAmount(finalAnnualTax, monthlyTax)}
                 isDeduction
                 dotColor="var(--color-dot-tax)"
+                recoveryTag="MAY_GET_BACK"
               />
             </div>
 
@@ -452,8 +460,9 @@ export function HomeScreen() {
               alignItems: 'center',
               justifyContent: 'space-between',
             }}>
-              <span style={{ fontSize: 14, fontWeight: 600, color: 'var(--color-text-primary)' }}>
+              <span style={{ fontSize: 14, fontWeight: 600, color: 'var(--color-text-primary)', display: 'flex', alignItems: 'center', gap: 10 }}>
                 Net In-hand Salary
+                <RecoveryLabel tag="RECEIVED_NOW" />
               </span>
               <span style={{ fontSize: 14, fontWeight: 600, color: 'var(--color-positive)' }}>
                 ₹ {formatINR(getAmount(annualNetInhand, monthlyNetInhand)).replace('₹', '').trim()}
@@ -491,6 +500,11 @@ export function HomeScreen() {
                 </p>
               </div>
             )}
+            {/* PF Calculator inside the card */}
+            <div style={{ marginTop: 24 }}>
+              <PFCalculator />
+            </div>
+
           </div>
         )}
 

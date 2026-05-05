@@ -1,0 +1,18 @@
+{
+  "nodes": [
+    {"id": "store_calc", "label": "CalculatorStore", "file_type": "code", "source_file": "src/store/useCalculatorStore.ts"},
+    {"id": "utils_formatters", "label": "Formatters", "file_type": "code", "source_file": "src/lib/utils/formatters.ts"},
+    {"id": "doc_readme", "label": "Project README", "file_type": "document", "source_file": "README.md"},
+    {"id": "doc_html", "label": "Index HTML", "file_type": "document", "source_file": "index.html"},
+    {"id": "img_hero", "label": "Hero Image", "file_type": "image", "source_file": "src/assets/hero.png"},
+    {"id": "test_salary", "label": "Salary Tests", "file_type": "code", "source_file": "src/tests/salary.test.ts"}
+  ],
+  "edges": [
+    {"source": "home_screen", "target": "store_calc", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "src/components/HomeScreen.tsx"},
+    {"source": "doc_readme", "target": "home_screen", "relation": "references", "confidence": "INFERRED", "confidence_score": 0.75, "source_file": "README.md"},
+    {"source": "test_salary", "target": "logic_salary", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "src/tests/salary.test.ts"}
+  ],
+  "hyperedges": [],
+  "input_tokens": 1000,
+  "output_tokens": 600
+}
